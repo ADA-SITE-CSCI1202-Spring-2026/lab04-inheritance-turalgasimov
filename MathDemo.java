@@ -1,14 +1,14 @@
 public class MathDemo {
 
-	private static int min(int a, int b) {
+	public static int min(int a, int b) {
 		return (a < b) ? a : b;
 	}
 
-	private static int max(int a, int b) {
+	public static int max(int a, int b) {
 		return (a > b) ? a : b;
 	}
 
-	private static int sum (int[] args) {
+	public static int sum (int[] args) {
 		int total = 0;
 		for (int i = 0; i < args.length; i++) {
 			total += args[i];
@@ -16,11 +16,11 @@ public class MathDemo {
 		return total;
 	}
 
-	private static float mean(int[] args) {
+	public static float mean(int[] args) {
 		return (float) sum(args) / args.length;
 	}
 
-	private static int factorial(int n) {
+	public static int factorial(int n) {
 		if (n == 1) return 1;
 		return n * factorial(n - 1);
 	}
